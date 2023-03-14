@@ -1,0 +1,29 @@
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+
+  color: white;
+}
+td {
+  border: 1px dotted black;
+  text-align: center;
+}
+.table__caption {
+  text-align: right;
+  font-weight: bold;
+
+  color: black;
+}
+.table__header {
+  border: 1px dotted black;
+  background-color: #012755;
+}
+.table__odd-row {
+  background-color: blue;
+}
+.table__number {
+  background-color: #51708e;
+}
+.table__even-row {
+  background-color: purple;
+}
