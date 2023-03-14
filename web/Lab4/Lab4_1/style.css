@@ -1,0 +1,30 @@
+body {
+  background-color: #c8c8c6;
+  font-family: Arial;
+}
+h2 {
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: #008ba5;
+}
+h3 {
+  color: white;
+  padding: 20px;
+  background-color: #ff3e5d;
+  font-style: italic;
+  text-decoration: underline;
+}
+p {
+  text-indent: 40px;
+  color: #313131;
+}
+body > a {
+  border: 1px solid #313131;
+  text-decoration: none;
+  color: #313131;
+}
+p > a {
+  text-decoration: none;
+  color: #313131;
+}

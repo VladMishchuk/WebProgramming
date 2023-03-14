@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lab3_1</title>
+  </head>
+
+  <body>
+    <form>
+      <fieldset>
+        <legend>
+          <strong>Реєстрація</strong>
+        </legend>
+        <p>
+          <i>Заповніть наступні поля</i>
+        </p>
+        <p></p>
+        <fieldset>
+          <legend>
+            <strong>Обовя`зкові поля</strong>
+          </legend>
+          <table>
+            <td>
+              <p>
+                <label
+                  >Введіть своє ім'я:
+                  <input placeholder="Введіть своє ім'я" type="text" />
+                </label>
+              </p>
+              <p>
+                <label
+                  >Введіть своє прізвище:
+                  <input placeholder="Введіть своє прізвище" type="text" />
+                </label>
+              </p>
+              <p>
+                <label
+                  >Введіть пароль:
+                  <input placeholder="Введіть пароль" type="password" />
+                </label>
+              </p>
+              <p>
+                <span>Виберіть стать:
+                  <label><input type="radio" name="gender" />чол.</label>
+                  <label><input type="radio" name="gender" />жін.</label>
+                </span>
+              </p>
+            </td>
+            <td>
+              <span>Введіть мови програмування, які Ви знаєте:</span>
+              <br />
+              <label> <input type="checkbox" />Pascal </label>
+              <br />
+              <label> <input type="checkbox" />PHP </label>
+              <br />
+              <label> <input type="checkbox" />Delphi </label>
+              <br />
+              <label> <input type="checkbox" />JavaScript </label>
+              <br />
+              <label> <input type="checkbox" />Basic </label>
+            </td>
+            <td>
+              <span>За потреби, можете залишити свій номер тут:</span>
+              <br />
+              <textarea
+                placeholder="Напишіть нам"
+                cols="36"
+                rows="7"
+              ></textarea>
+            </td>
+          </table>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>
+            <strong>Елементи вибору</strong>
+          </legend>
+          <p>
+            <span>Виберіть дату народження:</span>
+            <select>
+              <option>1</option>
+              <option>2</option>
+              <option>3</option>
+              <option>4</option>
+              <option>5</option>
+            </select>
+            <select>
+              <option>січень</option>
+              <option>лютий</option>
+              <option>березень</option>
+              <option>квітень</option>
+              <option>травень</option>
+            </select>
+            <select>
+              <option>2000</option>
+              <option>2001</option>
+              <option>2002</option>
+              <option>2003</option>
+              <option>2004</option>
+            </select>
+          </p>
+          <p>
+            <input type="file" />
+          </p>
+        </fieldset>
+        <br />
+        <fieldset>
+          <legend>
+            <strong>Деякі елементи форми HTML5</strong>
+          </legend>
+          <label
+            >type="color":
+            <input type="color" />
+          </label>
+          <br />
+          <label>
+            type="range":
+            <input type="range" min="0" max="50" />
+          </label>
+          <br />
+          <label>
+            type="date":
+            <input type="date" />
+          </label>
+          <br />
+          <label>
+            type="number":
+            <input type="number" placeholder="Ваш вік" />
+          </label>
+          <br />
+          <label>
+            type="meter":
+            <meter value="40" min="0" max="100">40/100</meter>
+          </label>
+        </fieldset>
+        <button>Надіслати</button>
+      </fieldset>
+    </form>
+  </body>
+</html>
