@@ -15,16 +15,16 @@ h1{
     max-width: 360px;
 }
 
-.main__div{
+.container__example{
     background-color: rgb(224, 224, 224);
     padding: 20px;
     border: 1px solid gray;
-    border-radius: 5px;
+    border-radius: 3px;
 }
 
-.second__div p{
-margin: 0px;
-text-indent: 20px;
+.container__example p{
+    margin: 0px;
+    text-indent: 20px;
 }
 
 span{
