@@ -1,0 +1,18 @@
+body {
+    background-color: antiquewhite;
+}
+
+.container {
+    background-color: #d3fffe;
+    margin: 10px;
+    padding: 20px;
+}
+
+h1 {
+    color: cornflowerblue;
+}
+
+hr {
+    color: white;
+    border-color: white;
+}
