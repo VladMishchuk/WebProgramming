@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.field {
+  margin: 30px auto 0;
+  max-width: 600px;
+  border: 1px solid black;
+  padding: 20px;
+  background: #ffffcc;
+}
+
+header {
+  background-color: #86ceeb;
+  color: green;
+  text-align: center;
+  padding: 5px;
+}
+
+main {
+  background-color: #f39a77; /*ілюзія розтягнення бокового меню по висоті*/
+}
+
+aside {
+  float: left;
+  width: 24%;
+}
+
+nav {
+  margin-top: 30px;
+}
+
+a {
+  color: blue;
+  display: block;
+  margin: 20px 10px;
+}
+
+section {
+  margin-left: 24%;
+  padding: 10px;
+  width: 76%;
+  background-color: #86eb97;
+}
+
+.section__header {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  color: #800080;
+}
+
+p {
+  text-align: justify;
+  text-indent: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+ul {
+  margin-bottom: 20px;
+}
+
+figcaption {
+  text-indent: 20px;
+}
+
+.section__prompt {
+  margin-top: 20px;
+}
+
+footer {
+  background-color: #86ceeb;
+  color: #666699;
+  clear: both;
+}
