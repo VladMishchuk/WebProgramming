@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap');
+*{
+    font-family: 'Phudu', cursive;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 30px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%);
+}
+main {
+    width: 480px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: rgb(210, 232, 252);
+    box-shadow: 20px 20px 50px 5px rgba(168,168,168,1);
+}
+h1 {
+    text-align: center;
+}
+span {
+    background-color: hsl(195, 73%, 61%);
+    border-radius: 10px;
+    padding: 0 10px;
+}
+hr {
+    border: 1px solid;
+    margin: 10px;
+}
+form {
+    font-size: 25px;
+}
+label {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+input {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+}
+.button {
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 5px;
+    background-color: hsl(195, 53%, 79%);
+}
+.button:hover {
+    background-color:hsl(195, 73%, 61%);
+}
+div {
+    padding: 5px;
+    text-align: center;
+    border-radius: 10px;
+    width: 50%;
+    background-color: #fff;
+    word-wrap: break-word;
+}

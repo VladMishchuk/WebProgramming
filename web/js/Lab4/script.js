@@ -4,7 +4,7 @@ function start() {
 
     while (true) {
         let input = prompt("Введіть ціле число:", "");
-        if (input === null | input === "" | isNaN(input)) {
+        if (input === null | input === "" | isNaN(input) | input.has(" ") === true) {
             break;
         }
         let number = parseInt(input)

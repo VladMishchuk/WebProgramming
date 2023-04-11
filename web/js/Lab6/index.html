@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <title>Lab6</title>
+  </head>
+  <body>
+    <form>
+      <h1>Дайте відповіді на запитання</h1>
+      <div class="name">
+        <label
+          >Введіть своє ім'я:
+          <input id="name" placeholder="Введіть своє ім'я" type="text" required/>
+        </label>
+      </div>
+      <div class="gender-div">
+        <span
+          >Виберіть стать:
+          <label><input value="male" class="gender" type="radio" name="gender" checked />чол.</label>
+          <label><input value="female" class="gender" type="radio" name="gender" />жін.</label>
+        </span>
+      </div>
+      <div class="city-div">
+        <label>Виберіть місто, в якому хочете жити
+          <select>
+            <option class="city" value="Луцьк">Луцьк</option>
+            <option class="city" value="Житомир">Житомир</option>
+            <option class="city" value="Червоноград">Червоноград</option>
+          </select>
+        </label>
+      </div>
+      <div class="lang-div">
+        <span>Введіть мови програмування, які Ви знаєте:</span>
+        <br />
+        <label> <input class="lang" type="checkbox" value="JavaScript" />JavaScript </label>
+        <br />
+        <label> <input class="lang" type="checkbox" value="Phyton" />Phyton </label>
+        <br />
+        <label> <input class="lang" type="checkbox" value="PHP" />PHP </label>
+        <br />
+        <label> <input class="lang" type="checkbox" value="Ruby" />Ruby </label>
+      </div>
+      <div class="button-div">
+        <button id="button">ok</button>
+      </div>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>
