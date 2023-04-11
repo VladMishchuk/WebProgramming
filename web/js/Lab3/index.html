@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Lab3</title>
+</head>
+<body>
+    <main>
+        <h1>Обчислення периметра трикутника</h1>
+        <p><span>Периметром</span> називається сума всіх сторін трикутника</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/49/Triangle_with_notations_2.svg/220px-Triangle_with_notations_2.svg.png" alt="Triangle">
+        <form>
+            <label>Введіть першу сторону трикутника: <input class="input" id="a" type="text"></label> 
+            <label>Введіть другу сторону трикутника: <input class="input" id="b" type="text"></label>
+            <label>Введіть третю сторону трикутника: <input class="input" id="c" type="text"></label>
+            <input class="button" type="button" onclick="equation()" value="Обчислити периметр">
+            <label>Периметр трикутника <span class="blk">=</span> <input class="output" id="perimetr" type="text"></label>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

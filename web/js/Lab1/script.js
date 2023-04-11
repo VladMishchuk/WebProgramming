@@ -1,6 +1,11 @@
 function equation(){
-    let a = parseInt(document.getElementById("a").value);
-    let b = parseInt(document.getElementById("b").value);
+    let a = parseInt(document.getElementById("a").value),
+        b = parseInt(document.getElementById("b").value),
+        y = document.getElementById("y").innerHTML;
 
-    document.getElementById("y").value = b / a;
+    a === 0 & b === 0
+        ? document.getElementById("y").innerHTML = "Будь яке число є розв'язком"
+        : a === 0 & b !== 0
+            ? document.getElementById("y").innerHTML = "Жодного розв'язку немає"
+            : document.getElementById("y").innerHTML = b / a
 }
