@@ -1,1 +1,21 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Linelial equation calculator</title>
+</head>
+<body>
+    <main>
+        <h1>Обчислення суми з проміжку від меншого числа до більшого числа</h1>
+        <hr />
+        <form>
+            <label>Введіть A:<input class="input" id="a" type="text"></label> 
+            <label>Введіть b:<input class="input" id="b" type="text"></label>
+            <input class="button" type="button" onclick="equation()" value="Обчислити суму">
+            <label>Значення x:<div id="y">0</div></label>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
