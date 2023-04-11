@@ -1,3 +1,7 @@
+let 
+    inputs = document.querySelectorAll(".input"),
+    val;
+    
 function equation() {
     let a = parseInt(document.getElementById("a").value),
         b = parseInt(document.getElementById("b").value),
@@ -11,3 +15,10 @@ function equation() {
                 ? alert("Трикутник не існує")
                 : document.getElementById("perimetr").value = a + b + c
 }
+
+inputs.forEach(input => {
+    input.addEventListener("input", e => {
+        val = input.value.replace(/[^0-9]/g, '');
+        input.value = val;
+    });
+});
