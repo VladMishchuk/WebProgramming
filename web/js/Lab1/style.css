@@ -65,4 +65,5 @@ input {
     border-radius: 10px;
     width: 50%;
     background-color: #fff;
+    word-wrap: break-word;
 }
