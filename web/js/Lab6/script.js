@@ -7,11 +7,9 @@ button.addEventListener('click', () => {
       message = "",
       genderChecked,
       citySelected,
-      languagesIsChecked = 0,
-      languagesChecked;
+      languagesIsChecked = 0;
 
   if (name !== ""){
-
     genders.forEach(gender => {
       if (gender.checked) {
            genderChecked = gender.value
@@ -37,10 +35,10 @@ button.addEventListener('click', () => {
 
     message = 
       languagesIsChecked > 1
-        ? message += " та мови програмування "
+        ? message += " та мови програмування"
         : languagesIsChecked < 1
             ? message
-            : message += " та мову програмування "
+            : message += " та мову програмування"
     
     languages.forEach(lanuage => {
       lanuage.checked
