@@ -8,6 +8,7 @@ body{
     align-items: center;
     text-align: center;
     background-image: url(https://report.if.ua/wp-content/uploads/2018/06/shpalery-v-styli-art.jpg);
+    overflow: hidden;
 }
 main {
     width: 650px;
