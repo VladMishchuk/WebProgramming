@@ -9,7 +9,6 @@ function check() {
     pieces = document.getElementById("k").value,
     chocolate = width * height,
     output;
- 
   if (height % pieces === 0 | width  % pieces === 0) {
     while(chocolate > 0) {
       height -= pieces
