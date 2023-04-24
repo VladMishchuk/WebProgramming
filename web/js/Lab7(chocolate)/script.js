@@ -1,32 +1,46 @@
 let
   inputs = document.querySelectorAll(".input"),
   val;
-    
+
 function check() {
   let 
-    height = document.getElementById("m").value,
-    width = document.getElementById("n").value,
-    pieces = document.getElementById("k").value,
-    chocolate = width * height,
-    output;
-  if (height % pieces === 0 | width  % pieces === 0) {
-    while(chocolate > 0) {
-      height -= pieces
+  m = document.getElementById("m").value, //height
+  n = document.getElementById("n").value, //width
+  k = document.getElementById("k").value, //inputed pieces
+  output = "Не можна";
+
+  if ((k < m * n) & (m > 0 & n > 0 & k > 0)) {
+    if ((k % m === 0) & (k >= m)) {
+      let a = k;
+      while(a >= m) {
+        a -= m;
+        if(a === 0) {
+          output = "Можна";
+          break;
+        }
+        else {
+          output = "Не можна";
+        }
+      }
     }
-  }
-  console.log(height)
-  console.log(5 % 1)
-  /*output =  
-    height === '' | 
-    height === '0' | 
-    width  === '' |
-    pieces === ''
-      ? alert("Введіть усі дані")
-      : height % pieces === 0 |
-        width  % pieces === 0
-          ? "можна"
-          : "не можна"
-  */
+    if ((k % n === 0) & (k >= n)) {
+      let a = k;
+      while(a >= n) {
+        a -= n;
+        if(a === 0) {
+          output = "Можна";
+          break;
+        }
+        else {
+          output = "Не можна";
+        }
+      }
+    }
+   }
+   else {
+    alert("Введіть вірні значення!");
+   }
+
   document.getElementById("y").innerHTML = output
 }
 
