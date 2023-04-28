@@ -1,7 +1,7 @@
 let
   inputs = document.querySelectorAll(".input"),
   val;
-
+  
 function check() {
   let 
   m = document.getElementById("m").value, //height
@@ -45,8 +45,8 @@ function check() {
 }
 
 inputs.forEach(input => {
-    input.addEventListener("input", e => {
-        val = input.value.replace(/[^0-9]/g, '');
+    input.addEventListener("input", (e) => {
+        val = e.target.value.replace(/[^0-9]/g, '');
         input.value = val;
     });
 });
