@@ -1,16 +1,17 @@
-function listCreate() {
-  list = document.createElement("ul");
-  document.body.appendChild(list);
+const ul = document.createElement("ul");
+document.body.appendChild(ul);
 
+function addList() {
   while (true) {
-    var itemText = prompt("Enter list item:");
-    if (!itemText || itemText.trim() === "") {
+    let input = prompt("Введіть елемент списку:");
+    if ((input === null) | (input === "")) {
       break;
     }
-    var item = document.createElement("li");
-    item.textContent = itemText;
-    list.appendChild(item);
+
+    let li = document.createElement("li");
+
+    li.textContent = input;
+    ul.append(li);
   }
 }
-
-window.onload = listCreate;
+addList();

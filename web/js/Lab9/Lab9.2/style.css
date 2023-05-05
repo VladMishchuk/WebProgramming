@@ -1,5 +1,16 @@
-.customClass {
-    color: #dfe665;
-    background-color: #2e323d;
-    border: solid black 1px;
+@import url("https://fonts.googleapis.com/css2?family=Phudu:wght@300&display=swap");
+* {
+  font-family: "Phudu", cursive;
+}
+body {
+  background: linear-gradient(
+    90deg,
+    hsla(186, 33%, 94%, 1) 0%,
+    hsla(216, 41%, 79%, 1) 100%
+  );
+}
+.class {
+  padding: 20px;
+  background-color: rgb(126, 184, 238);
+  border-radius: 10px;
 }

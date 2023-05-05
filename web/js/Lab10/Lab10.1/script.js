@@ -4,9 +4,9 @@ function button1() {
 
   button.addEventListener("mousedown", (event) => {
     if (event.button === 0) {
-      ta.value = "Left Click";
+      ta.value = "ЛКМ";
     } else if (event.button === 2) {
-      ta.value = "Right Click";
+      ta.value = "ПКМ";
     }
   });
 }
@@ -16,12 +16,9 @@ function button2() {
 
   button.addEventListener("mousedown", (event) => {
     if (event.altKey && event.ctrlKey && event.shiftKey && event.button === 0) {
-      alert("You did right");
+      alert("Ви зробили вірно!");
     }
   });
 }
-
-window.onload = () => {
-  button1();
-  button2();
-};
+button1();
+button2();

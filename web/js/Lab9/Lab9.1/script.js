@@ -1,26 +1,19 @@
-function hcreate() {
-  let h1 = document.createElement("h1");
-  h1.textContent = "First header";
+const h1 = document.createElement("h1"),
+  h2 = document.createElement("h2"),
+  p = document.createElement("p");
 
-  let h2 = document.createElement("h2");
-  h2.textContent = "Second header";
+h1.innerText = "Заголовок першого рівня";
+h2.innerText = "Заголовок другого рівня";
+p.innerText =
+  "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam sit iure est vitae recusandae suscipit laboriosam nisi totam aut doloribus reiciendis nobis excepturi, exercitationem cupiditate minima modi laborum error adipisci!";
 
-  let p = document.createElement("p");
-  p.textContent =
-    "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore reiciendis vel itaque. Rerum deserunt voluptas dolore quia! Ipsam facilis, temporibus, quasi odio accusamus suscipit mollitia quod, reprehenderit id sunt minus!";
+document.body.style.background =
+  "linear-gradient(90deg, hsla(186, 33%, 94%, 1) 0%, hsla(216, 41%, 79%, 1) 100%)";
+document.body.style.fontFamily = "sans-serif";
+h1.style.textAlign = "center";
+h2.style.textAlign = "center";
+p.style.textAlign = "center";
 
-  document.body.appendChild(h1);
-  document.body.appendChild(h2);
-  document.body.appendChild(p);
-
-  addStyles();
-}
-
-function addStyles() {
-  let style = document.createElement("style");
-  style.textContent =
-    "body { color: #fffff8; background-color: #333742; } h1 { color: #f38136; } h2 { color: #f2e65f; } p { color: #12e8ac; }";
-  document.head.appendChild(style);
-}
-
-window.onload = hcreate;
+document.body.appendChild(h1);
+document.body.appendChild(h2);
+document.body.appendChild(p);
