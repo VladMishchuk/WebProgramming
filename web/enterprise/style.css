@@ -9,6 +9,13 @@
 }
 
 /*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
+/*HEADER*/
 header {
   height: 100%;
   background-color: #022930;
@@ -144,6 +151,12 @@ input[type="radio"]:checked + label span {
 }
 
 /*MAIN*/
+/*MAIN*/
+/*MAIN*/
+/*MAIN*/
+/*MAIN*/
+/*MAIN*/
+/*MAIN*/
 main {
   margin-top: 60px;
 }
@@ -237,6 +250,13 @@ article a {
 }
 
 /*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
+/*FOOTER*/
 footer {
   height: 110px;
   background: #022930;
@@ -251,6 +271,14 @@ footer {
   justify-content: space-between;
 }
 
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
+/* MEDIA */
 @media (max-width: 860px) {
   #header-bottom,
   #footer-section {
@@ -259,7 +287,6 @@ footer {
   }
 }
 @media (max-width: 768px) {
-  .slider,
   .navbar {
     display: none;
   }
@@ -289,7 +316,10 @@ footer {
     transform: translateY(10px);
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 640px) {
+  .slider{
+    display: none;
+  }
   .tutorials {
     display: flex;
     gap: 10px;
