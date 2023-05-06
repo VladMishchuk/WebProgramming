@@ -1,24 +1,23 @@
-function button1() {
-  let button = document.getElementById("button");
-  let ta = document.getElementById("textarea");
+const textarea = document.getElementById("textarea"),
+  mouseBtn = document.getElementById("mouse-btn"),
+  combinationBtn = document.getElementById("combination-btn");
 
-  button.addEventListener("mousedown", (event) => {
+function mouseClick() {
+  mouseBtn.addEventListener("mousedown", (event) => {
     if (event.button === 0) {
-      ta.value = "ЛКМ";
+      textarea.value = "ЛКМ";
     } else if (event.button === 2) {
-      ta.value = "ПКМ";
+      textarea.value = "ПКМ";
     }
   });
 }
 
-function button2() {
-  let button = document.getElementById("rbutton");
-
-  button.addEventListener("mousedown", (event) => {
+function combinationClick() {
+  combinationBtn.addEventListener("mousedown", (event) => {
     if (event.altKey && event.ctrlKey && event.shiftKey && event.button === 0) {
       alert("Ви зробили вірно!");
     }
   });
 }
-button1();
-button2();
+mouseClick();
+combinationClick();
