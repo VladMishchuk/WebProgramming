@@ -9,13 +9,6 @@
 }
 
 /*HEADER*/
-/*HEADER*/
-/*HEADER*/
-/*HEADER*/
-/*HEADER*/
-/*HEADER*/
-/*HEADER*/
-/*HEADER*/
 header {
   height: 100%;
   background-color: #022930;
@@ -163,12 +156,6 @@ input[type="radio"]:checked + label span {
 }
 
 /*MAIN*/
-/*MAIN*/
-/*MAIN*/
-/*MAIN*/
-/*MAIN*/
-/*MAIN*/
-/*MAIN*/
 main {
   margin-top: 60px;
 }
@@ -216,6 +203,8 @@ article p {
   color: rgba(0, 0, 0, 0.5);
 }
 .card-image {
+  height: 120px;
+  object-fit: cover;
   border: 3px solid #ccc;
   box-shadow: 0px 50px 30px -50px rgba(0, 0, 0, 1);
 }
@@ -262,13 +251,6 @@ article a {
 }
 
 /*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
-/*FOOTER*/
 footer {
   height: 110px;
   background: #022930;
@@ -283,13 +265,6 @@ footer {
   justify-content: space-between;
 }
 
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
-/* MEDIA */
 /* MEDIA */
 @media (max-width: 860px) {
   #header-bottom,
