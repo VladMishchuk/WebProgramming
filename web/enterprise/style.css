@@ -266,7 +266,7 @@ footer {
 }
 
 /* MEDIA */
-@media (max-width: 860px) {
+@media (max-width: 880px) {
   #header-bottom,
   #footer-section {
     flex-direction: column;
