@@ -126,7 +126,7 @@ function deselectAnswers() {
 }
 
 submitBtn.addEventListener("click", () => {
-  // check to see the answer
+
   const answer = getSelected();
 
   if (answer) {
@@ -138,11 +138,7 @@ submitBtn.addEventListener("click", () => {
     if (currentQuiz < quizData.length) {
       loadQuiz();
     } else {
-      quiz.innerHTML = `
-                <h2>Ваш результат ${score}/${quizData.length}.</h2>
-                
-                <button onclick="location.reload()">Спочатку</button>
-            `;
+      quiz.innerHTML = "<h2>Ваш результат " + score + "/" + quizData.length + "</h2>";
     }
   }
 });
