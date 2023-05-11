@@ -8,20 +8,29 @@ ctx.fillRect(0, 160, 400, 140);
 
 ////////
 //Паркан
-let x = 5;
+let x = 55;
 ctx.fillStyle = "LightCyan";
-ctx.fillRect(0, 220, 400, 10);
-ctx.fillRect(0, 250, 400, 10);
-for (let i = 1; i < 22; i++) {
-  ctx.fillStyle = "LightCyan";
-  ctx.fillRect(x, 200, 10, 70);
+ctx.fillRect(50, 210, 400, 10);
+ctx.fillRect(50, 240, 400, 10);
+for (let i = 1; i < 19; i++) {
+  ctx.fillRect(x, 190, 10, 70);
   x += 20;
 }
+
 ///////
 //Стіни
 ctx.fillStyle = "Tan";
 ctx.fillRect(100, 140, 200, 150);
 ctx.strokeRect(100, 140, 200, 150);
+
+ctx.fillStyle = "rgb(131, 112, 87)";
+ctx.beginPath();
+ctx.moveTo(300, 140);
+ctx.lineTo(370, 140);
+ctx.lineTo(370, 270);
+ctx.lineTo(300, 290);
+ctx.fill();
+ctx.stroke();
 
 ///////
 //Вікна
@@ -39,6 +48,18 @@ ctx.moveTo(260, 190);
 ctx.lineTo(260, 250);
 ctx.stroke();
 
+ctx.fillStyle = "rgb(134, 182, 182)";
+ctx.beginPath();
+ctx.moveTo(310, 190);
+ctx.lineTo(360, 180);
+ctx.lineTo(360, 235);
+ctx.lineTo(310, 250);
+ctx.fill();
+ctx.stroke();
+
+ctx.moveTo(335, 185);
+ctx.lineTo(335, 242);
+ctx.stroke();
 ///////
 //Двері
 ctx.fillStyle = "Brown";
@@ -57,18 +78,27 @@ const drawCloud = (x, y) => {
   ctx.arc(x + 110, y, 30, Math.PI * 1.5, Math.PI * 0.5);
   ctx.moveTo(x + 110, y + 30);
   ctx.lineTo(x, y + 30);
-  ctx.fillStyle = "SkyBlue";
+  ctx.fillStyle = "White";
   ctx.fill();
 };
-drawCloud(250, 80);
+drawCloud(250, 70);
 
 //////
 //Дах
 ctx.fillStyle = "Maroon";
 ctx.beginPath();
-ctx.moveTo(75, 150);
-ctx.lineTo(200, 50);
-ctx.lineTo(320, 150);
+ctx.moveTo(80, 150);
+ctx.lineTo(150, 50);
+ctx.lineTo(350, 50);
+ctx.lineTo(300, 150);
+ctx.fill();
+ctx.stroke();
+
+ctx.fillStyle = "rgb(48, 0, 0)";
+ctx.beginPath();
+ctx.moveTo(350, 50);
+ctx.lineTo(380, 140);
+ctx.lineTo(300, 150);
 ctx.fill();
 ctx.stroke();
 
